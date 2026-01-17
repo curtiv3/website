@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silver Lake Plumber | Premium Plumbing in Los Angeles</title>
+    <meta
+      name="description"
+      content="Silver Lake Plumber provides premium, same-day plumbing service across Los Angeles. Call now or request a quote for drain cleaning, water heater repair, leak detection, and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f6f3;
+        --surface: #ffffff;
+        --ink: #0f172a;
+        --muted: #6b7280;
+        --accent: #0f4c5c;
+        --accent-soft: #e8f1f3;
+        --line: #e5e7eb;
+        --shadow: 0 22px 50px rgba(15, 23, 42, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Manrope", system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1120px, 90%);
+        margin: 0 auto;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 1rem;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+
+      header {
+        padding: 28px 0;
+        background: var(--surface);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .brand {
+        font-weight: 800;
+        font-size: 1.2rem;
+        letter-spacing: 0.02em;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+
+      .nav-cta {
+        display: flex;
+        gap: 0.75rem;
+      }
+
+      .btn {
+        padding: 0.85rem 1.6rem;
+        border-radius: 999px;
+        font-weight: 600;
+        border: 1px solid transparent;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .btn-primary {
+        background: var(--accent);
+        color: #fff;
+        box-shadow: 0 16px 30px rgba(15, 76, 92, 0.25);
+      }
+
+      .btn-secondary {
+        background: #fff;
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 18px 32px rgba(15, 76, 92, 0.2);
+      }
+
+      .hero {
+        padding: 90px 0 70px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.6rem, 4vw, 4rem);
+        line-height: 1.1;
+        margin: 1rem 0 1.5rem;
+      }
+
+      .hero p {
+        color: var(--muted);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      }
+
+      .hero-card {
+        background: var(--surface);
+        padding: 2.5rem;
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--line);
+      }
+
+      .hero-stats {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .hero-stat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 1.2rem;
+      }
+
+      .hero-stat:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .hero-stat span {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .trust-bar {
+        padding: 30px 0;
+        background: var(--surface);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .trust-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.2rem;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .section-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2rem, 3vw, 2.8rem);
+        margin: 0;
+      }
+
+      .section-heading p {
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: var(--surface);
+        padding: 2rem;
+        border-radius: 22px;
+        border: 1px solid var(--line);
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+      }
+
+      .card h3 {
+        margin: 0 0 0.5rem;
+      }
+
+      .card p {
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .why {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .why-item {
+        background: var(--accent-soft);
+        border-radius: 20px;
+        padding: 1.8rem;
+      }
+
+      .areas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .areas span {
+        background: #fff;
+        border: 1px solid var(--line);
+        padding: 0.5rem 0.9rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+      }
+
+      .testimonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+      }
+
+      blockquote {
+        margin: 0;
+        padding: 2rem;
+        background: var(--surface);
+        border-radius: 22px;
+        border: 1px solid var(--line);
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+      }
+
+      blockquote p {
+        color: var(--muted);
+      }
+
+      .contact {
+        background: var(--surface);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+        align-items: start;
+      }
+
+      .contact-card {
+        background: var(--bg);
+        padding: 2rem;
+        border-radius: 22px;
+      }
+
+      form {
+        display: grid;
+        gap: 1rem;
+      }
+
+      label {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 0.85rem 1rem;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        font-family: inherit;
+        font-size: 1rem;
+      }
+
+      textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+
+      footer {
+        padding: 40px 0;
+        color: var(--muted);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+      }
+
+      .socials {
+        display: flex;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      .socials a {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid var(--line);
+      }
+
+      @media (max-width: 900px) {
+        .nav-links {
+          display: none;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .nav-cta {
+          width: 100%;
+        }
+
+        .nav-cta .btn {
+          flex: 1;
+        }
+
+        .hero {
+          padding-top: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">Silver Lake Plumber</div>
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#areas">Service Areas</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn btn-secondary" href="tel:+13235550124">Call Now</a>
+          <a class="btn btn-primary" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="pill">Los Angeles • Licensed &amp; Insured</span>
+            <h1>Premium plumbing service for homes and businesses in Silver Lake.</h1>
+            <p>
+              Fast response, transparent pricing, and clean workmanship. From
+              emergency leaks to water heater repairs, we keep your property running
+              smoothly.
+            </p>
+            <div class="nav-cta">
+              <a class="btn btn-primary" href="tel:+13235550124">Call Now</a>
+              <a class="btn btn-secondary" href="#contact">Get a Quote</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <span class="pill">Premium service, zero surprises</span>
+            <h2 style="margin: 1rem 0 0.75rem; font-size: 1.7rem;">
+              A calm, professional plumbing experience from the first call.
+            </h2>
+            <p style="margin: 0; color: var(--muted);">
+              We keep communication clear, protect your home, and finish the job with
+              craftsmanship you can trust.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-items">
+          <div>Licensed &amp; Insured</div>
+          <div>Same-day Service</div>
+          <div>Upfront Pricing</div>
+          <div>Free Inspection</div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Complete plumbing services with a premium touch.</h2>
+            <p>Everything you need, delivered by expert technicians who respect your home.</p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <h3>Drain Cleaning</h3>
+              <p>Restore fast flow with professional-grade snaking and hydro-jetting.</p>
+            </div>
+            <div class="card">
+              <h3>Water Heater Repair</h3>
+              <p>Energy-efficient fixes and replacements for tank and tankless systems.</p>
+            </div>
+            <div class="card">
+              <h3>Leak Detection</h3>
+              <p>Pinpoint hidden leaks quickly to prevent structural damage and mold.</p>
+            </div>
+            <div class="card">
+              <h3>Sewer Line Repair</h3>
+              <p>Trenchless and traditional repairs to keep your lines healthy.</p>
+            </div>
+            <div class="card">
+              <h3>Faucet &amp; Toilet Repair</h3>
+              <p>Quiet, reliable fixes for drips, clogs, and fixture upgrades.</p>
+            </div>
+            <div class="card">
+              <h3>Emergency Plumbing</h3>
+              <p>Rapid response for bursts, backups, and urgent after-hours calls.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Why Silver Lake homeowners trust us.</h2>
+            <p>Every call is handled with care, clarity, and a focus on long-term results.</p>
+          </div>
+          <div class="why">
+            <div class="why-item">
+              <h3>White-glove service</h3>
+              <p>Boot covers, clean work areas, and respectful technicians from start to finish.</p>
+            </div>
+            <div class="why-item">
+              <h3>Clear communication</h3>
+              <p>We explain the issue, outline options, and confirm pricing before any work begins.</p>
+            </div>
+            <div class="why-item">
+              <h3>Guaranteed workmanship</h3>
+              <p>Every job is backed by a satisfaction guarantee and extended workmanship warranty.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="areas">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Service areas across Los Angeles.</h2>
+            <p>We dispatch quickly throughout Silver Lake and surrounding neighborhoods.</p>
+          </div>
+          <div class="areas">
+            <span>Silver Lake</span>
+            <span>Echo Park</span>
+            <span>Los Feliz</span>
+            <span>Atwater Village</span>
+            <span>Downtown LA</span>
+            <span>Hollywood</span>
+            <span>Highland Park</span>
+            <span>Glendale</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What customers typically mention.</h2>
+            <p>Consistent feedback themes we hear from Silver Lake homeowners.</p>
+          </div>
+          <div class="testimonials">
+            <blockquote>
+              <strong>Clear communication</strong>
+              <p>Technicians explain the issue, outline options, and confirm pricing first.</p>
+            </blockquote>
+            <blockquote>
+              <strong>Respect for your home</strong>
+              <p>Clean work areas, careful cleanup, and professional workmanship.</p>
+            </blockquote>
+            <blockquote>
+              <strong>Reliable follow-through</strong>
+              <p>Consistent updates and follow-ups so the job is done right.</p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-heading">
+              <h2>Request service in minutes.</h2>
+              <p>Call or send a quick request—our dispatcher will confirm within 30 minutes.</p>
+            </div>
+            <div class="contact-card">
+              <p><strong>Call:</strong> <a href="tel:+13235550124">(323) 555-0124</a></p>
+              <p><strong>Email:</strong> <a href="mailto:hello@silverlakeplumber.com">hello@silverlakeplumber.com</a></p>
+              <p><strong>Hours:</strong> Mon–Sat 7am–9pm, Emergency 24/7</p>
+              <a class="btn btn-primary" href="tel:+13235550124">Call Now</a>
+            </div>
+          </div>
+          <div>
+            <form action="mailto:hello@silverlakeplumber.com" method="post" enctype="text/plain">
+              <div class="form-row">
+                <div>
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+                </div>
+                <div>
+                  <label for="phone">Phone number</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(323) 555-0124" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="jane@email.com" required />
+                </div>
+                <div>
+                  <label for="service">Service needed</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option>Drain Cleaning</option>
+                    <option>Water Heater Repair</option>
+                    <option>Leak Detection</option>
+                    <option>Sewer Line Repair</option>
+                    <option>Faucet &amp; Toilet Repair</option>
+                    <option>Emergency Plumbing</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="message">Tell us about the issue</label>
+                <textarea id="message" name="message" placeholder="Share the problem, best time to call, and any details." required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Get a Quote</button>
+              <p style="color: var(--muted); margin: 0; font-size: 0.9rem;">
+                By submitting, you agree to receive a confirmation call or text.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <strong>Silver Lake Plumber</strong>
+          <p>Serving Los Angeles with premium residential and commercial plumbing services.</p>
+        </div>
+        <div>
+          <p><strong>Business Info</strong></p>
+          <p>1234 Sunset Blvd, Los Angeles, CA</p>
+          <p>CA License #1092831</p>
+        </div>
+        <div>
+          <p><strong>Connect</strong></p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M16 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="#0f4c5c" />
+                <path
+                  d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                  stroke="#0f4c5c"
+                  stroke-width="1.6"
+                />
+                <rect
+                  x="4"
+                  y="4"
+                  width="16"
+                  height="16"
+                  rx="4"
+                  stroke="#0f4c5c"
+                  stroke-width="1.6"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M14 8h2V5.5A4.5 4.5 0 0 0 11.5 1H9v3h2.5A1.5 1.5 0 0 1 13 5.5V8H9v3h4v12h3V11h3l1-3h-4V8Z"
+                  fill="#0f4c5c"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Yelp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2.5c.9 0 1.6.7 1.6 1.6v7.6c0 .9-.7 1.6-1.6 1.6s-1.6-.7-1.6-1.6V4.1c0-.9.7-1.6 1.6-1.6Z"
+                  fill="#0f4c5c"
+                />
+                <path
+                  d="M18.7 6.7a1.6 1.6 0 0 1 2.1.7 1.6 1.6 0 0 1-.7 2.1l-4.9 2.2a1.6 1.6 0 0 1-2.1-.7 1.6 1.6 0 0 1 .7-2.1l4.9-2.2Z"
+                  fill="#0f4c5c"
+                />
+                <path
+                  d="M18.6 17.3a1.6 1.6 0 0 1 .7 2.1 1.6 1.6 0 0 1-2.1.7l-4.9-2.2a1.6 1.6 0 0 1-.7-2.1 1.6 1.6 0 0 1 2.1-.7l4.9 2.2Z"
+                  fill="#0f4c5c"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
